@@ -1,0 +1,28 @@
+.footerContainer{
+    background-color: black;
+    margin-top: 20px;
+    display: flex;
+    
+}
+.dataContainer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 50px
+}
+@media screen and (max-width: 858px){
+    .footerContainer{
+        background-color: black;
+        
+        display: flex;
+        
+        
+        font-size: 11px
+    }
+    .footerContainer img{
+        width: 7rem;
+    }
+}
+h2{
+    color: black;
+}
