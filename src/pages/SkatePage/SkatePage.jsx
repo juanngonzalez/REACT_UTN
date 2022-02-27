@@ -4,6 +4,7 @@ import {getSkatesProm, getTrucksProm} from '../SkatePage/SkatePageData'
 import CardTruckPage from './CardTruckPage/CardTruckPage'
 import './SkatePage.css'
 import GiftCard from '../../componentes/GiftCard/GiftCard'
+import BlackBar from '../../componentes/BlackBar/BlackBar'
 function SkatePage() {
   const [skates,getSkates] = useState([])
   const [trucks,getTrucks] = useState([])
@@ -28,7 +29,7 @@ function SkatePage() {
   return (
     <div>
       <CardSkatePage dataOne={skates}/>
-      <div className='blackLine'>.</div>
+      <BlackBar/>
       <CardTruckPage dataTwo={trucks}/>
       <GiftCard/>
     </div>

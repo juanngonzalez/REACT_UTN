@@ -10,7 +10,7 @@ function CardMapSkate({data}) {
   <Card.Body>
     <Card.Title>{data.name}</Card.Title>
     <Card.Text>
-    {data.price}
+    $ {data.price}
     </Card.Text>
     <Button variant="primary">COMPRAR</Button>
   </Card.Body>

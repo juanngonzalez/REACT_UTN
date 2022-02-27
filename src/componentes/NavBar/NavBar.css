@@ -47,13 +47,14 @@
 }
 .logoNav{
     height: 75px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .btnMenu{
     margin-right: 30px;
     font-size: 25px;
     cursor: pointer;
     display: none;
+    
 }
 #otroModo.show{
     top: 75px;
@@ -81,13 +82,16 @@
     }
     .btnMenu{
         display: inline-flex;
+        margin-right: 50px;
+        
     }
     .rutasNav ul{
         position: fixed;
-        width: 100vw;
-        height: calc(100% - 75px);
+        width: 130vw;
+        height: calc(80% - 75px);
         background: #414141;
-        top: -110vh;
+        top: -100vh;
+        
         text-align: center;
         transition: all .4s;
         flex-direction: column;
@@ -95,7 +99,7 @@
         
     }
     .rutasNav ul li{
-        margin: 30px 0 0 0;
+        margin: 30px 0 0 50px;
         line-height: 30px;
        
     }
@@ -111,7 +115,7 @@
         color: red;
     }
     .logoNav{
-        padding-left: 35px;
+        padding-left: 25px;
     }   
 
 }

@@ -8,8 +8,11 @@ import NewsPage from './pages/NewsPage/NewsPage'
 import ContactPage from './pages/ContactPage/ContactPage'
 import SkatePage from './pages/SkatePage/SkatePage'
 import ClothesPage from './pages/ClothesPage/ClothesPage'
+import CartPage from './pages/CartPage/CartPage';
 import './App.css'
-
+import ManClothesPage from './pages/ClothesPage/ManClothesPage/ManClothesPage';
+import WomanClothesPage from './pages/ClothesPage/WomanClothesPage/WomanClothesPage';
+import KidsClothesPage from './pages/ClothesPage/KidsClothesPage/KidsClothesPage';
 
 
 function App() {
@@ -24,6 +27,10 @@ function App() {
             <Route path='/us' exact component={UsPage}/>
             <Route path='/news' exact component={NewsPage}/>
             <Route path='/contact' exact component={ContactPage}/>
+            <Route path='/cart' exact component={CartPage}/>
+            <Route path='/clothes/man' exact component={ManClothesPage}/>
+            <Route path='/clothes/woman' exact component={WomanClothesPage}/>
+            <Route path='/clothes/kids' exact component={KidsClothesPage}/>
           </Switch>
         <Footer/>
     </BrowserRouter>

@@ -17,7 +17,7 @@
         display: flex;
         
         
-        font-size: 11px
+        font-size: 12px
     }
     .footerContainer img{
         width: 7rem;
@@ -25,4 +25,26 @@
 }
 h2{
     color: black;
+}
+.navFooter ul{
+    display: flex;
+    margin-left: 40px;
+    list-style: none;
+
+
+}
+.navFooter ul li{
+    margin-left: 25px;
+    color: white;
+
+    
+}
+.navFooter{
+    display: flex;
+    align-items: flex-end;
+}
+.navFooter ul li:hover{
+    color: rgba(81, 69, 241, 0.795);
+    
+    
 }

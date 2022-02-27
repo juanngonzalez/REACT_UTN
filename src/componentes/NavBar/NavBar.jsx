@@ -4,8 +4,7 @@ import './NavBar.css'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import showMenu from './NavBarScript'
 import {Link} from 'react-router-dom'
-
-
+import CartWidget from '../CartWidget/CartWidget'
 
 function NavBar() {
 
@@ -22,7 +21,10 @@ function NavBar() {
                 <li><Link to='/contact'>CONTACT</Link></li>
             </ul>
         </div>
-        <button className='ingresar'>INGRESAR</button>
+        <div style={{display:'flex',marginRight:'10px'}}>
+          <Link to='/cart'><div style={{marginRight:'35px'}}><CartWidget/></div></Link>
+          <button className='ingresar'>INGRESAR</button>
+        </div>
         <div className='btnMenu'onClick={showMenu}>
             <GiHamburgerMenu/>
         </div>
