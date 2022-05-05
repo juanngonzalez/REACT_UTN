@@ -30,6 +30,7 @@
     display: flex;
     list-style: none;
     margin-right: 30px;
+    position: relative;
 }
 .rutasNav ul li{
     border-radius: 3px;
@@ -54,11 +55,12 @@
     font-size: 25px;
     cursor: pointer;
     display: none;
-    
 }
 #otroModo.show{
     top: 75px;
 }
+
+
 @media screen and (max-width: 952px){
     .logoNav{
         padding-left: 35px;

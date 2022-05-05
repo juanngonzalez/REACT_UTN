@@ -1,6 +1,6 @@
 import React from 'react'
 import '../ClothesPage.css'
-import CardShoesMap from '../CardShoesPage/CardShoesMap'
+import MapMostWanted from './MapMostWanted'
 
 function CardMostWanted({dataWantd}) {
   return (
@@ -8,7 +8,7 @@ function CardMostWanted({dataWantd}) {
       <h3>Most wanted</h3>
     <div className='shoesCardContainer'>
         {dataWantd.map((data) => (
-        <CardShoesMap key={data.id} data={data}/>
+        <MapMostWanted key={data.id} data={data}/>
   ))}
     </div>
     </>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import {Link} from 'react-router-dom'
 
 function CardMapTruck({data}) {
   return (
@@ -12,7 +13,7 @@ function CardMapTruck({data}) {
     <Card.Text>
     $ {data.price}
     </Card.Text>
-    <Button variant="primary">COMPRAR</Button>
+    <Link to={`/detail/truck/${data.id}`}><Button variant="primary">COMPRAR</Button></Link>
   </Card.Body>
 </Card>
     </div>
